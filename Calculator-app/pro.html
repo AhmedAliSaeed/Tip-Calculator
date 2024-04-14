@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="image">
+        <img src="./images/logo.svg">
+    </div>
+
+    <div class="container">
+
+        <div class="content">
+            <p>Bill</p>
+            <img src="./images/icon-dollar.svg" alt="" id="m-img">
+            <div id="em-in"><p id="em-i">can't be zero</p></div>
+            <input type="text" id="in-money" placeholder="0" min="0">
+            <div id="em-in"></div>
+            
+            <p>Selcet Tip %</p>
+            <div class="btns">
+                <button id="btn1">5%</button>
+                <button id="btn2">10%</button>
+                <button id="btn3">15%</button>
+                <button id="btn4">25%</button>
+                <button id="btn5">50%</button>
+                <input type="text" id="custom" min="0" placeholder="Custom">
+            </div>
+    
+            <p>Number Of People</p>
+            <img src="./images/icon-person.svg" alt="" id="p-img">
+            <div id="em-pe"><p id="em-p">can't be zero</p></div>
+            <input type="text" id="num-people" min="0" placeholder="0">
+        </div>
+        
+
+        <div class="card">
+            <div class="tip">
+                <h5>Tip Amount</h5>
+                <p>/ person</p>
+            <h1 id="tip">$0.00</h1>
+            </div>
+            
+            <div class="total">
+                <h5>Total</h5>
+                <p>/ person</p>
+                <h1 id="total">$0.00</h1>
+            </div>
+            <button type="submit" id="sub-btn">Reset</button>
+        </div>
+    </div>
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>
